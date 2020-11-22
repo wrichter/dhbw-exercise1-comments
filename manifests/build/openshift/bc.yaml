@@ -12,7 +12,7 @@ spec:
     contextDir: /
     git:
       uri: https://github.com/wrichter/dhbw-exercise1-comments
-      ref: main
+      ref: change_source
     type: Git
   strategy:
     type: Docker
