@@ -25,12 +25,12 @@ spec:
     #     namespace: openshift
   output:
     to:
-      kind: DockerImage
-      name: replace/me/comments:latest
-    pushSecret:
-      name: external-registry-dockercfg
-      # kind: ImageStreamTag
-      # name: comments:latest
+    #   kind: DockerImage
+    #   name: replace/me/comments:latest
+    # pushSecret:
+    #   name: external-registry-dockercfg
+      kind: ImageStreamTag
+      name: comments:latest
   failedBuildsHistoryLimit: 5
   postCommit: {}
   resources: {}
