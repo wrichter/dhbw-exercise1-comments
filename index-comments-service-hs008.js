@@ -76,7 +76,7 @@ app.post('/posts/:id/comments', async(req, res) => {
         }     
     });
     // hs002 new for event bus implementation
-    await axios.post('http://docker-compose_dhbw-exercise1-nodejs-eventbus_1:4005/events', {
+    await axios.post('http://event-bus:4005/events', {
         type: 'CommentCreated',
         data: {
             id: commentId,
@@ -104,7 +104,7 @@ app.post('/events', async(req, res) => {
             return comment.id === id;
         });
         comment.status = status;
-        await axios.post('http://docker-compose_dhbw-exercise1-nodejs-eventbus_1:4005/events', {
+        await axios.post('http://event-bus:4005/events', {
             type: 'CommentUpdated',
             data: {
                 id,
