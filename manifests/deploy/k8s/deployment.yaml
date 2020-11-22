@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"comments:latest","namespace":"wrichter-dhbw-exercise-1"},"fieldPath":"spec.template.spec.containers[?(@.name==\"comments\")].image","pause":"false"}]'
+    image.openshift.io/triggers: '[{"from":{"kind":"ImageStreamTag","name":"comments:latest","namespace":"dhbw-exercise-1"},"fieldPath":"spec.template.spec.containers[?(@.name==\"comments\")].image","pause":"false"}]'
   labels:
     app: comments
     app.kubernetes.io/component: comments
