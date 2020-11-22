@@ -9,6 +9,7 @@ metadata:
     app.kubernetes.io/component: comments
     app.kubernetes.io/instance: comments
     app.kubernetes.io/part-of: dhbw-exercise-1
+    app.openshift.io/runtime: nodejs
   name: comments
 spec:
   progressDeadlineSeconds: 600
