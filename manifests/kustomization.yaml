@@ -1,0 +1,8 @@
+bases:
+#- build/openshift
+- deploy/k8s
+- deploy/openshift
+
+images:
+- name: replace/me/comments
+  newName: quay.io/wrichter/dhbw-exercise-1-comments

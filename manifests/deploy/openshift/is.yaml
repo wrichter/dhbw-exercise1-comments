@@ -1,0 +1,22 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  labels:
+    app: comments
+    app.kubernetes.io/component: comments
+    app.kubernetes.io/instance: comments
+    app.kubernetes.io/part-of: dhbw-exercise-1
+  name: comments
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+  - from:
+      kind: DockerImage
+      name: replace/me/comments:latest
+      #name: quay.io/wrichter/dhbw-exercise-1-comments:latest
+    importPolicy:
+      scheduled: true
+    name: latest
+    referencePolicy:
+      type: Source

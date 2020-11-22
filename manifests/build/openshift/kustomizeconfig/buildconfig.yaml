@@ -1,0 +1,3 @@
+images:
+- path: spec/output/to/name
+  kind: BuildConfig

@@ -1,0 +1,6 @@
+resources:
+- route.yaml
+- is.yaml
+
+configurations:
+- kustomizeconfig/imagestream.yaml
