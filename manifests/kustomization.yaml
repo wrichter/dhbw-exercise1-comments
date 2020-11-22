@@ -6,3 +6,4 @@ bases:
 images:
 - name: replace/me/comments
   newName: quay.io/wrichter/dhbw-exercise-1-comments
+  newTag: main
