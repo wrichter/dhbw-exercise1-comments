@@ -102,5 +102,5 @@ app.post('/events', async(req, res) => {
 
 const message = process.env.MESSAGE || "Listening"
 app.listen(4001, () =>{
-    console.log('Listening on 4001');
+    console.log(`${message} on 4001`);
 })
