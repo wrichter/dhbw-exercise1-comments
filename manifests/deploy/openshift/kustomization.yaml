@@ -1,5 +1,5 @@
 resources:
-- route.yaml
+#- route.yaml
 - is.yaml
 
 configurations:
