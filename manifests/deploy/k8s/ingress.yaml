@@ -4,7 +4,7 @@ metadata:
   name: comments
 spec:
   rules:
-    - host: comments-wrichter-dhbw-exercise-1.apps.osd-evalcluster.v0z2.p1.openshiftapps.com
+    - host: comments-dhbw-exercise-1.2886795283-80-kota02.environments.katacoda.com
       http:
         paths:
           - path: /
