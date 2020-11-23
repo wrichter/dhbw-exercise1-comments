@@ -36,7 +36,20 @@ spec:
         ports:
         - containerPort: 4001
           protocol: TCP
-        resources: {}
+        resources:
+          # requests - how much will be guaranteed for the container (impacts scheduling)
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          # limits - to which extent can the container allocate resources (impacts cgroups limits)
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+
+        envFrom:
+        - configMapRef:
+            name: settings
+
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
