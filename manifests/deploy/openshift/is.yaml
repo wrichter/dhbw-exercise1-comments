@@ -14,7 +14,7 @@ spec:
   - from:
       kind: DockerImage
       name: replace/me/comments:latest
-      #name: quay.io/wrichter/dhbw-exercise-1-comments:latest
+      #name: image-registry.openshift-image-registry.svc:5000/dhbw-exercise-1/comments:latest
     importPolicy:
       scheduled: true
     name: latest
